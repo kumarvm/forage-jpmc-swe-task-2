@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import DataStreamer, { ServerRespond } from './DataStreamer';
+import React, {Component} from 'react';
+import DataStreamer, {ServerRespond} from './DataStreamer';
 import Graph from './Graph';
 import './App.css';
+import {setInterval} from "timers";
 
 /**
  * State declaration for <App />
  */
 interface IState {
-  data: ServerRespond[],
-  showGraph: boolean,
+    data: ServerRespond[],
+    showGraph: boolean
 }
 
 /**
